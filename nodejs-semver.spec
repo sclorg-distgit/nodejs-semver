@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:       %{?scl_prefix}nodejs-semver
-Version:    5.1.0
-Release:    2%{?dist}
+Version:        5.3.0
+Release:        1%{?dist}
 Summary:    Semantic versioner for npm
 License:    ISC
 URL:        https://github.com/isaacs/node-semver
@@ -38,6 +38,9 @@ ln -sf ../lib/node_modules/semver/bin/semver %{buildroot}%{_bindir}
 %doc README.md LICENSE
 
 %changelog
+* Thu Jan 05 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 5.3.0-1
+- Updated with script
+
 * Thu Jun 09 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 5.1.0-2
 - Resolves: rhbz#1334856 , fixes wrong license
 
